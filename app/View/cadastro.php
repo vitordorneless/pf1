@@ -1,3 +1,8 @@
+<?php
+$hash_de_vinculo = date('YmdHisdmY');
+$hora_entrada_dos_dados = date('Y-m-d H:i:s');
+$ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -75,6 +80,9 @@
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
                                                         <input type="text" name="mae" id="mae" class="form-control">
+                                                        <input type="hidden" name="hash_de_vinculo" id="hash_de_vinculo" value="<?php echo $hash_de_vinculo; ?>">                                                        
+                                                        <input type="hidden" name="ipmalacabado" id="ipmalacabado" value="<?php echo $ip_do_malacabado; ?>">
+                                                        <input type="hidden" name="hora_entrada_dos_dados" id="hora_entrada_dos_dados" value="<?php echo $hora_entrada_dos_dados; ?>">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -243,7 +251,7 @@
                                                 <div class="col-sm-6">                                                    
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Sexo</label>
-                                                        <select name="dep_sexo" id="dep_sexo" class="form-control">
+                                                        <select name="dep_sexo1" id="dep_sexo1" class="form-control">
                                                             <option value="0" selected>Escolher...</option>
                                                             <option value="1">Masculino</option>
                                                             <option value="2">Feminino</option>                                                            
@@ -255,6 +263,521 @@
                                                         <input type='button' id="dep2" name="dep2" class='btn btn-info' value='Inserir outro(a) Dependente' />
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="row" id="dep_2">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome2" id="dep_nome2" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel2" id="dep_tel2" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf2" id="dep_cpf2" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae2" id="dep_nome_mae2" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email2" id="dep_email2" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco2" id="dep_grau_parentesco2" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo2" id="dep_sexo2" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep3" name="dep3" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_3">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome3" id="dep_nome3" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel3" id="dep_tel3" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf3" id="dep_cpf3" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae3" id="dep_nome_mae3" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email3" id="dep_email3" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco3" id="dep_grau_parentesco3" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo3" id="dep_sexo3" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep4" name="dep4" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_4">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome4" id="dep_nome4" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel4" id="dep_tel4" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf4" id="dep_cpf4" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae4" id="dep_nome_mae4" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email4" id="dep_email4" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco4" id="dep_grau_parentesco4" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo4" id="dep_sexo4" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep5" name="dep5" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_5">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome5" id="dep_nome5" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel5" id="dep_tel5" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf5" id="dep_cpf5" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae5" id="dep_nome_mae5" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email5" id="dep_email5" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco5" id="dep_grau_parentesco5" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo5" id="dep_sexo5" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep6" name="dep6" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_6">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome6" id="dep_nome6" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel6" id="dep_tel6" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf6" id="dep_cpf6" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae6" id="dep_nome_mae6" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email6" id="dep_email6" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco6" id="dep_grau_parentesco6" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo6" id="dep_sexo6" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep7" name="dep7" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_7">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome7" id="dep_nome7" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel7" id="dep_tel7" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf7" id="dep_cpf7" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae7" id="dep_nome_mae7" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email7" id="dep_email7" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco7" id="dep_grau_parentesco7" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo7" id="dep_sexo7" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep8" name="dep8" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_8">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome8" id="dep_nome8" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel8" id="dep_tel8" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf8" id="dep_cpf8" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae8" id="dep_nome_mae8" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email8" id="dep_email8" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco8" id="dep_grau_parentesco8" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo8" id="dep_sexo8" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep9" name="dep9" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_9">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome9" id="dep_nome9" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel9" id="dep_tel9" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf9" id="dep_cpf9" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae9" id="dep_nome_mae9" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email9" id="dep_email9" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco9" id="dep_grau_parentesco9" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo9" id="dep_sexo9" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep10" name="dep10" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_10">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome10" id="dep_nome10" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel10" id="dep_tel10" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf10" id="dep_cpf10" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae10" id="dep_nome_mae10" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email10" id="dep_email10" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco10" id="dep_grau_parentesco10" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo10" id="dep_sexo10" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <input type='button' id="dep11" name="dep11" class='btn btn-info' value='Inserir outro(a) Dependente' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="dep_11">
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome</label>
+                                                        <input type="text" name="dep_nome11" id="dep_nome11" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Telefone</label>
+                                                        <input type="text" name="dep_tel11" id="dep_tel11" class="form-control">
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">CPF</label>
+                                                        <input type="text" name="dep_cpf11" id="dep_cpf11" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Nome da Mãe</label>
+                                                        <input type="text" name="dep_nome_mae11" id="dep_nome_mae11" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Email</label>
+                                                        <input type="text" name="dep_email11" id="dep_email11" class="form-control">
+                                                    </div>
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Grau de Parentesco</label>
+                                                        <select name="dep_grau_parentesco11" id="dep_grau_parentesco11" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Cônjuge</option>
+                                                            <option value="2">Companheiro(a)|União Estável</option>
+                                                            <option value="3">Filho(a)|Neto(a)|Bisneto(a)|Enteado(a)</option>
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="col-sm-6">                                                    
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="dep_sexo11" id="dep_sexo11" class="form-control">
+                                                            <option value="0" selected>Escolher...</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Feminino</option>                                                            
+                                                        </select>
+                                                    </div>                                                    
+                                                </div>                                                
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="description">
@@ -312,11 +835,61 @@
         $(document).ready(function () {
             alert('oi');
             $("#dep_1").hide();
-            $("#dep1").click(MostrarMensagem);
-            function MostrarMensagem(){
+            $("#dep1").click(MostrarMensagem1);
+            $("#dep_2").hide();
+            $("#dep2").click(MostrarMensagem2);
+            $("#dep_3").hide();
+            $("#dep3").click(MostrarMensagem3);
+            $("#dep_4").hide();
+            $("#dep4").click(MostrarMensagem4);
+            $("#dep_5").hide();
+            $("#dep5").click(MostrarMensagem5);
+            $("#dep_6").hide();
+            $("#dep6").click(MostrarMensagem6);
+            $("#dep_7").hide();
+            $("#dep7").click(MostrarMensagem7);
+            $("#dep_8").hide();
+            $("#dep8").click(MostrarMensagem8);
+            $("#dep_9").hide();
+            $("#dep9").click(MostrarMensagem9);
+            $("#dep_10").hide();
+            $("#dep10").click(MostrarMensagem10);
+            $("#dep_11").hide();
+            $("#dep11").click(MostrarMensagem11);
+            function MostrarMensagem1() {
                 $("#dep_1").show();
             }
-            
+            function MostrarMensagem2() {
+                $("#dep_2").show();
+            }
+            function MostrarMensagem3() {
+                $("#dep_3").show();
+            }
+            function MostrarMensagem4() {
+                $("#dep_4").show();
+            }
+            function MostrarMensagem5() {
+                $("#dep_5").show();
+            }
+            function MostrarMensagem6() {
+                $("#dep_6").show();
+            }
+            function MostrarMensagem7() {
+                $("#dep_7").show();
+            }
+            function MostrarMensagem8() {
+                $("#dep_8").show();
+            }
+            function MostrarMensagem9() {
+                $("#dep_9").show();
+            }
+            function MostrarMensagem10() {
+                $("#dep_10").show();
+            }
+            function MostrarMensagem11() {
+                $("#dep_11").show();
+            }
+
             function limpa_formulario_cep() {
                 $("#rua").val("");
                 $("#bairro").val("");

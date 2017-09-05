@@ -1,13 +1,121 @@
-cpf
+"cpf="+								cpf +
+"nome="+                                nome+
+"mail="+                                mail+
+"mae="+                                 mae+
+"hash_de_vinculo="+                     hash_de_vinculo+
+"tel1              ="+                  tel1+
+"ipmalacabado         ="+               ipmalacabado+
+"hora_entrada_dos_dados  ="+            hora_entrada_dos_dados+
+"nascimento                 ="+         nascimento+
+"tel2                       ="+         tel2+
+"sexo                       ="+         sexo+
+"cep                           ="+      cep+
+"rua                              ="+   rua+
+"bairro                           ="+   bairro+
+"numero          ="+                    numero+
+"complemento        ="+                 complemento+
+"cidade                ="+              cidade+
+"uf                       ="+           uf+
+"termos_uso                  ="+        termos_uso                                    +
+"dep_nome                       ="+     dep_nome+
+"dep_tel         ="+                    dep_tel+
+"dep_cpf            ="+                 dep_cpf+
+"dep_nome_mae          ="+              dep_nome_mae+
+"dep_email                ="+           dep_email+
+"dep_grau_parentesco         ="+        dep_grau_parentesco+
+"dep_sexo                       ="+     dep_sexo+
+"dep_nome1    ="+                       dep_nome1+
+"dep_tel1        ="+                    dep_tel1+
+"dep_cpf1           ="+                 dep_cpf1+
+"dep_nome_mae1         ="+              dep_nome_mae1+
+"dep_email1               ="+           dep_email1+
+"dep_grau_parentesco1        ="+        dep_grau_parentesco1+
+"dep_sexo1                      ="+     dep_sexo1+
+"dep_nome2                         ="+  dep_nome2+
+"dep_tel2     ="+                       dep_tel2+
+"dep_cpf2        ="+                    dep_cpf2+
+"dep_nome_mae2      ="+                 dep_nome_mae2+
+"dep_email2            ="+              dep_email2+
+"dep_grau_parentesco2     ="+           dep_grau_parentesco2+
+"dep_sexo2                   ="+        dep_sexo2+
+"dep_nome3                      ="+     dep_nome3+
+"dep_tel3                          ="+  dep_tel3+
+"dep_cpf3    ="+                        dep_cpf3+
+"dep_nome_mae3  ="+                     dep_nome_mae3+
+"dep_email3        ="+                  dep_email3+
+"dep_grau_parentesco3 ="+               dep_grau_parentesco3+
+"dep_sexo3               ="+            dep_sexo3+
+"dep_nome4                  ="+         dep_nome4+
+"dep_tel4                      ="+      dep_tel4+
+"dep_cpf4                         ="+   dep_cpf4+
+"dep_nome_mae4  ="+                     dep_nome_mae4+
+"dep_email4        ="+                  dep_email4+
+"dep_grau_parentesco4 ="+               dep_grau_parentesco4+
+"dep_sexo4               ="+            dep_sexo4+
+"dep_nome5                  ="+         dep_nome5+
+"dep_tel5                      ="+      dep_tel5+
+"dep_cpf5                         ="+   dep_cpf5+
+"dep_nome_mae5 ="+                      dep_nome_mae5+
+"dep_email5       ="+                   dep_email5+
+"dep_grau_parentesco5="+                dep_grau_parentesco5+
+"dep_sexo5              ="+             dep_sexo5+
+"dep_nome6                 ="+          dep_nome6+
+"dep_tel6                     ="+       dep_tel6+
+"dep_cpf6                        ="+    dep_cpf6+
+"dep_nome_mae6    ="+                   dep_nome_mae6+
+"dep_email6          ="+                dep_email6+
+"dep_grau_parentesco6   ="+             dep_grau_parentesco6+
+"dep_sexo6                 ="+          dep_sexo6+
+"dep_nome7                    ="+       dep_nome7+
+"dep_tel7                        ="+    dep_tel7+
+"dep_cpf7     ="+                       dep_cpf7+
+"dep_nome_mae7   ="+                    dep_nome_mae7+
+"dep_email7         ="+                 dep_email7+
+"dep_grau_parentesco7  ="+              dep_grau_parentesco7+
+"dep_sexo7                ="+           dep_sexo7+
+"dep_nome8                   ="+        dep_nome8+
+"dep_tel8                       ="+     dep_tel8+
+"dep_cpf8                          ="+  dep_cpf8+
+"dep_nome_mae8 ="+                      dep_nome_mae8+
+"dep_email8       ="+                   dep_email8+
+"dep_grau_parentesco8="+                dep_grau_parentesco8+
+"dep_sexo8              ="+             dep_sexo8+
+"dep_nome9                 ="+          dep_nome9+
+"dep_tel9                     ="+       dep_tel9+
+"dep_cpf9                        ="+    dep_cpf9+
+"dep_nome_mae9                      ="+ dep_nome_mae9+
+"dep_email9      ="+                    dep_email9+
+"dep_grau_parentesco9="+                dep_grau_parentesco9+
+"dep_sexo9              ="+             dep_sexo9+
+"dep_nome10                ="+          dep_nome10+
+"dep_tel10                    ="+       dep_tel10+
+"dep_cpf10                       ="+    dep_cpf10+
+"dep_nome_mae10                     ="+ dep_nome_mae10+
+"dep_email10         ="+                dep_email10+
+"dep_grau_parentesco10  ="+             dep_grau_parentesco10+
+"dep_sexo10                ="+          dep_sexo10+
+"dep_nome11                   ="+       dep_nome11+
+"dep_tel11                       ="+    dep_tel11+
+"dep_cpf11                          ="+ dep_cpf11+
+"dep_nome_mae11 ="+                     dep_nome_mae11+
+"dep_email11       ="+                  dep_email11+
+"dep_grau_parentesco11="+               dep_grau_parentesco11+
+"dep_sexo11              ="+            dep_sexo11
+
+
+aqui é do db
+
+hash_de_vinvulo
+ip_captura
+titular
+cpf_titular
+cpf_dependente
 nome
-mail
-mae
-hash_de_vinculo
-tel1
-ipmalacabado
-hora_entrada_dos_dados
+email
+nome_mae
+telefone
 nascimento
-tel2
+celular
 sexo
 cep
 rua
@@ -16,90 +124,10 @@ numero
 complemento
 cidade
 uf
-termos_uso
-
-dep_nome
-dep_tel
-dep_cpf
-dep_nome_mae
-dep_email
-dep_grau_parentesco
-dep_sexo
-dep_nome1
-dep_tel1
-dep_cpf1
-dep_nome_mae1
-dep_email1
-dep_grau_parentesco1
-dep_sexo1
-dep_nome2
-dep_tel2
-dep_cpf2
-dep_nome_mae2
-dep_email2
-dep_grau_parentesco2
-dep_sexo2
-dep_nome3
-dep_tel3
-dep_cpf3
-dep_nome_mae3
-dep_email3
-dep_grau_parentesco3
-dep_sexo3
-dep_nome4
-dep_tel4
-dep_cpf4
-dep_nome_mae4
-dep_email4
-dep_grau_parentesco4
-dep_sexo4
-dep_nome5
-dep_tel5
-dep_cpf5
-dep_nome_mae5
-dep_email5
-dep_grau_parentesco5
-dep_sexo5
-dep_nome6
-dep_tel6
-dep_cpf6
-dep_nome_mae6
-dep_email6
-dep_grau_parentesco6
-dep_sexo6
-dep_nome7
-dep_tel7
-dep_cpf7
-dep_nome_mae7
-dep_email7
-dep_grau_parentesco7
-dep_sexo7
-dep_nome8
-dep_tel8
-dep_cpf8
-dep_nome_mae8
-dep_email8
-dep_grau_parentesco8
-dep_sexo8
-dep_nome9
-dep_tel9
-dep_cpf9
-dep_nome_mae9
-dep_email9
-dep_grau_parentesco9
-dep_sexo9
-dep_nome10
-dep_tel10
-dep_cpf10
-dep_nome_mae10
-dep_email10
-dep_grau_parentesco10
-dep_sexo10
-dep_nome11
-dep_tel11
-dep_cpf11
-dep_nome_mae11
-dep_email11
-dep_grau_parentesco11
-dep_sexo11
+aceite_termos_de_uso
+hora_entrada_dos_dados
+criado_em
+localizacao
+status
+data_ultima_alteracao
 

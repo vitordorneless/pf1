@@ -38,3 +38,5 @@ CREATE TABLE `pf1`.`base_cpf` (
 ALTER TABLE `pf1`.`adesao` 
 ADD COLUMN `titular` INT NOT NULL AFTER `ip_captura`,
 ADD COLUMN `cpf_dependente` VARCHAR(12) NOT NULL AFTER `cpf_titular`;
+
+select * from adesao;

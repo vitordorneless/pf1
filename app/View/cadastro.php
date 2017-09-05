@@ -802,13 +802,12 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                     <div class="wizard-footer">
                                         <div class="pull-right">
                                             <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Próximo' />
-                                            <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finalizar' />
+                                            <input id="envia" type="submit" class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finalizar' />
                                         </div>
                                         <div class="pull-left">
                                             <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Anterior' />
-
                                             <div class="footer-checkbox">
-                                                <div class="col-sm-12"></div>
+                                                <div class="col-sm-12" id="conteudo"></div>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
@@ -924,6 +923,683 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                     limpa_formulário_cep();
                 }
             });
+
+            $("#form").submit(function () {
+                return false;
+            });
+
+            $("#envia").click(function () {
+                envia_form();
+            });
+
+            function envia_form() {
+                $("#conteudo").empty();
+                var cpf = $("#cpf").val();
+                var nome = $("#nome").val();
+                var mail = $("#mail").val();
+                var mae = $("#mae").val();
+                var hash_de_vinculo = $("#hash_de_vinculo").val();
+                var tel1 = $("#tel1").val();
+                var ipmalacabado = $("#ipmalacabado").val();
+                var hora_entrada_dos_dados = $("#hora_entrada_dos_dados").val();
+                var nascimento = $("#nascimento").val();
+                var tel2 = $("#tel2").val();
+                var sexo = $("#sexo").val();
+                var cep = $("#cep").val();
+                var rua = $("#rua").val();
+                var bairro = $("#bairro").val();
+                var numero = $("#numero").val();
+                var complemento = $("#complemento").val();
+                var cidade = $("#cidade").val();
+                var uf = $("#uf").val();
+                var termos_uso = $("#termos_uso").val();
+                var dep_nome = $("#dep_nome").val();
+                var dep_tel = $("#dep_tel").val();
+                var dep_cpf = $("#dep_cpf").val();
+                var dep_nome_mae = $("#dep_nome_mae").val();
+                var dep_email = $("#dep_email").val();
+                var dep_grau_parentesco = $("#dep_grau_parentesco").val();
+                var dep_sexo = $("#dep_sexo").val();
+                var dep_nome1 = $("#dep_nome1").val();
+                var dep_tel1 = $("#dep_tel1").val();
+                var dep_cpf1 = $("#dep_cpf1").val();
+                var dep_nome_mae1 = $("#dep_nome_mae1").val();
+                var dep_email1 = $("#dep_email1").val();
+                var dep_grau_parentesco1 = $("#dep_grau_parentesco1").val();
+                var dep_sexo1 = $("#dep_sexo1").val();
+                var dep_nome2 = $("#dep_nome2").val();
+                var dep_tel2 = $("#dep_tel2").val();
+                var dep_cpf2 = $("#dep_cpf2").val();
+                var dep_nome_mae2 = $("#dep_nome_mae2").val();
+                var dep_email2 = $("#dep_email2").val();
+                var dep_grau_parentesco2 = $("#dep_grau_parentesco2").val();
+                var dep_sexo2 = $("#dep_sexo2").val();
+                var dep_nome3 = $("#dep_nome3").val();
+                var dep_tel3 = $("#dep_tel3").val();
+                var dep_cpf3 = $("#dep_cpf3").val();
+                var dep_nome_mae3 = $("#dep_nome_mae3").val();
+                var dep_email3 = $("#dep_email3").val();
+                var dep_grau_parentesco3 = $("#dep_grau_parentesco3").val();
+                var dep_sexo3 = $("#dep_sexo3").val();
+                var dep_nome4 = $("#dep_nome4").val();
+                var dep_tel4 = $("#dep_tel4").val();
+                var dep_cpf4 = $("#dep_cpf4").val();
+                var dep_nome_mae4 = $("#dep_nome_mae4").val();
+                var dep_email4 = $("#dep_email4").val();
+                var dep_grau_parentesco4 = $("#dep_grau_parentesco4").val();
+                var dep_sexo4 = $("#dep_sexo4").val();
+                var dep_nome5 = $("#dep_nome5").val();
+                var dep_tel5 = $("#dep_tel5").val();
+                var dep_cpf5 = $("#dep_cpf5").val();
+                var dep_nome_mae5 = $("#dep_nome_mae5").val();
+                var dep_email5 = $("#dep_email5").val();
+                var dep_grau_parentesco5 = $("#dep_grau_parentesco5").val();
+                var dep_sexo5 = $("#dep_sexo5").val();
+                var dep_nome6 = $("#dep_nome6").val();
+                var dep_tel6 = $("#dep_tel6").val();
+                var dep_cpf6 = $("#dep_cpf6").val();
+                var dep_nome_mae6 = $("#dep_nome_mae6").val();
+                var dep_email6 = $("#dep_email6").val();
+                var dep_grau_parentesco6 = $("#dep_grau_parentesco6").val();
+                var dep_sexo6 = $("#dep_sexo6").val();
+                var dep_nome7 = $("#dep_nome7").val();
+                var dep_tel7 = $("#dep_tel7").val();
+                var dep_cpf7 = $("#dep_cpf7").val();
+                var dep_nome_mae7 = $("#dep_nome_mae7").val();
+                var dep_email7 = $("#dep_email7").val();
+                var dep_grau_parentesco7 = $("#dep_grau_parentesco7").val();
+                var dep_sexo7 = $("#dep_sexo7").val();
+                var dep_nome8 = $("#dep_nome8").val();
+                var dep_tel8 = $("#dep_tel8").val();
+                var dep_cpf8 = $("#dep_cpf8").val();
+                var dep_nome_mae8 = $("#dep_nome_mae8").val();
+                var dep_email8 = $("#dep_email8").val();
+                var dep_grau_parentesco8 = $("#dep_grau_parentesco8").val();
+                var dep_sexo8 = $("#dep_sexo8").val();
+                var dep_nome9 = $("#dep_nome9").val();
+                var dep_tel9 = $("#dep_tel9").val();
+                var dep_cpf9 = $("#dep_cpf9").val();
+                var dep_nome_mae9 = $("#dep_nome_mae9").val();
+                var dep_email9 = $("#dep_email9").val();
+                var dep_grau_parentesco9 = $("#dep_grau_parentesco9").val();
+                var dep_sexo9 = $("#dep_sexo9").val();
+                var dep_nome10 = $("#dep_nome10").val();
+                var dep_tel10 = $("#dep_tel10").val();
+                var dep_cpf10 = $("#dep_cpf10").val();
+                var dep_nome_mae10 = $("#dep_nome_mae10").val();
+                var dep_email10 = $("#dep_email10").val();
+                var dep_grau_parentesco10 = $("#dep_grau_parentesco10").val();
+                var dep_sexo10 = $("#dep_sexo10").val();
+                var dep_nome11 = $("#dep_nome11").val();
+                var dep_tel11 = $("#dep_tel11").val();
+                var dep_cpf11 = $("#dep_cpf11").val();
+                var dep_nome_mae11 = $("#dep_nome_mae11").val();
+                var dep_email11 = $("#dep_email11").val();
+                var dep_grau_parentesco11 = $("#dep_grau_parentesco11").val();
+                var dep_sexo11 = $("#dep_sexo11").val();
+                var aviso = '';
+                var count = 0;
+
+                if ($("#cpf").val() === '')
+                {
+                    aviso = aviso + 'CPF,';
+                    count++;
+                }
+
+                if ($("#nome").val() === '')
+                {
+                    aviso = aviso + 'Nome,';
+                    count++;
+                }
+
+                if ($("#mail").val() === '')
+                {
+                    aviso = aviso + 'Email,';
+                    count++;
+                }
+
+                if ($("#mae").val() === '')
+                {
+                    aviso = aviso + 'Nome da Mãe,';
+                    count++;
+                }
+
+                if ($("#tel1").val() === '')
+                {
+                    aviso = aviso + 'Telefone Fixo,';
+                    count++;
+                }
+
+                if ($("#nascimento").val() === '')
+                {
+                    aviso = aviso + 'Data de Nascimento,';
+                    count++;
+                }
+
+                if ($("#tel2").val() === '')
+                {
+                    aviso = aviso + 'Telefone Celular,';
+                    count++;
+                }
+
+                if ($("#sexo").val() === '')
+                {
+                    aviso = aviso + 'Sexo,';
+                    count++;
+                }
+
+                if ($("#cep").val() === '')
+                {
+                    aviso = aviso + 'CEP,';
+                    count++;
+                }
+
+                if ($("#rua").val() === '')
+                {
+                    aviso = aviso + 'Rua,';
+                    count++;
+                }
+
+                if ($("#bairro").val() === '')
+                {
+                    aviso = aviso + 'Bairro,';
+                    count++;
+                }
+
+                if ($("#numero").val() === '')
+                {
+                    aviso = aviso + 'Número da casa,';
+                    count++;
+                }
+
+                if ($("#complemento").val() === '')
+                {
+                    aviso = aviso + 'Complemento,';
+                    count++;
+                }
+
+                if ($("#cidade").val() === '')
+                {
+                    aviso = aviso + 'Cidade,';
+                    count++;
+                }
+
+                if ($("#uf").val() === '')
+                {
+                    aviso = aviso + 'Estado(UF),';
+                    count++;
+                }
+
+                if (count !== 0)
+                {
+                    alert(count + ' campos necessitam sua atenção: ' + aviso);
+                    return false;
+                }
+
+                if ($("#dep_nome").val() === '')
+                {
+                    dep_nome = 'no';
+                }
+
+                if ($("#dep_tel").val() === '')
+                {
+                    dep_tel = 'no';
+                }
+
+                if ($("#dep_cpf").val() === '')
+                {
+                    dep_cpf = 'no';
+                }
+
+                if ($("#dep_nome_mae").val() === '')
+                {
+                    dep_nome_mae = 'no';
+                }
+
+                if ($("#dep_email").val() === '')
+                {
+                    dep_email = 'no';
+                }
+
+                if ($("#dep_grau_parentesco").val() === '')
+                {
+                    dep_grau_parentesco = 0;
+                }
+
+                if ($("#dep_sexo").val() === '')
+                {
+                    dep_sexo = 0;
+                }
+
+                if ($("#dep_nome1").val() === '')
+                {
+                    dep_nome1 = 'no';
+                }
+
+                if ($("#dep_tel1").val() === '')
+                {
+                    dep_tel1 = 'no';
+                }
+
+                if ($("#dep_cpf1").val() === '')
+                {
+                    dep_cpf1 = 'no';
+                }
+
+                if ($("#dep_nome_mae1").val() === '')
+                {
+                    dep_nome_mae1 = 'no';
+                }
+
+                if ($("#dep_email1").val() === '')
+                {
+                    dep_email1 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco1").val() === '')
+                {
+                    dep_grau_parentesco1 = 0;
+                }
+
+                if ($("#dep_sexo1").val() === '')
+                {
+                    dep_sexo1 = 0;
+                }
+
+                if ($("#dep_nome2").val() === '')
+                {
+                    dep_nome2 = 'no';
+                }
+
+                if ($("#dep_tel2").val() === '')
+                {
+                    dep_tel2 = 'no';
+                }
+
+                if ($("#dep_cpf2").val() === '')
+                {
+                    dep_cpf2 = 'no';
+                }
+
+                if ($("#dep_nome_mae2").val() === '')
+                {
+                    dep_nome_mae2 = 'no';
+                }
+
+                if ($("#dep_email2").val() === '')
+                {
+                    dep_email2 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco2").val() === '')
+                {
+                    dep_grau_parentesco2 = 0;
+                }
+
+                if ($("#dep_sexo2").val() === '')
+                {
+                    dep_sexo2 = 0;
+                }
+
+                if ($("#dep_nome3").val() === '')
+                {
+                    dep_nome3 = 'no';
+                }
+
+                if ($("#dep_tel3").val() === '')
+                {
+                    dep_tel3 = 'no';
+                }
+
+                if ($("#dep_cpf3").val() === '')
+                {
+                    dep_cpf3 = 'no';
+                }
+
+                if ($("#dep_nome_mae3").val() === '')
+                {
+                    dep_nome_mae3 = 'no';
+                }
+
+                if ($("#dep_email3").val() === '')
+                {
+                    dep_email3 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco3").val() === '')
+                {
+                    dep_grau_parentesco3 = 0;
+                }
+
+                if ($("#dep_sexo3").val() === '')
+                {
+                    dep_sexo3 = 0;
+                }
+
+                if ($("#dep_nome4").val() === '')
+                {
+                    dep_nome4 = 'no';
+                }
+
+                if ($("#dep_tel4").val() === '')
+                {
+                    dep_tel4 = 'no';
+                }
+
+                if ($("#dep_cpf4").val() === '')
+                {
+                    dep_cpf4 = 'no';
+                }
+
+                if ($("#dep_nome_mae4").val() === '')
+                {
+                    dep_nome_mae4 = 'no';
+                }
+
+                if ($("#dep_email4").val() === '')
+                {
+                    dep_email4 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco4").val() === '')
+                {
+                    dep_grau_parentesco4 = 0;
+                }
+
+                if ($("#dep_sexo4").val() === '')
+                {
+                    dep_sexo4 = 0;
+                }
+
+                if ($("#dep_nome5").val() === '')
+                {
+                    dep_nome5 = 'no';
+                }
+
+                if ($("#dep_tel5").val() === '')
+                {
+                    dep_tel5 = 'no';
+                }
+
+                if ($("#dep_cpf5").val() === '')
+                {
+                    dep_cpf5 = 'no';
+                }
+
+                if ($("#dep_nome_mae5").val() === '')
+                {
+                    dep_nome_mae5 = 'no';
+                }
+
+                if ($("#dep_email5").val() === '')
+                {
+                    dep_email5 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco5").val() === '')
+                {
+                    dep_grau_parentesco5 = 0;
+                }
+
+                if ($("#dep_sexo5").val() === '')
+                {
+                    dep_sexo5 = 0;
+                }
+
+                if ($("#dep_nome6").val() === '')
+                {
+                    dep_nome6 = 'no';
+                }
+
+                if ($("#dep_tel6").val() === '')
+                {
+                    dep_tel6 = 'no';
+                }
+
+                if ($("#dep_cpf6").val() === '')
+                {
+                    dep_cpf6 = 'no';
+                }
+
+                if ($("#dep_nome_mae6").val() === '')
+                {
+                    dep_nome_mae6 = 'no';
+                }
+
+                if ($("#dep_email6").val() === '')
+                {
+                    dep_email6 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco6").val() === '')
+                {
+                    dep_grau_parentesco6 = 0;
+                }
+
+                if ($("#dep_sexo6").val() === '')
+                {
+                    dep_sexo6 = 0;
+                }
+
+                if ($("#dep_nome7").val() === '')
+                {
+                    dep_nome7 = 'no';
+                }
+
+                if ($("#dep_tel7").val() === '')
+                {
+                    dep_tel7 = 'no';
+                }
+
+                if ($("#dep_cpf7").val() === '')
+                {
+                    dep_cpf7 = 'no';
+                }
+
+                if ($("#dep_nome_mae7").val() === '')
+                {
+                    dep_nome_mae7 = 'no';
+                }
+
+                if ($("#dep_email7").val() === '')
+                {
+                    dep_email7 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco7").val() === '')
+                {
+                    dep_grau_parentesco7 = 0;
+                }
+
+                if ($("#dep_sexo7").val() === '')
+                {
+                    dep_sexo7 = 0;
+                }
+
+                if ($("#dep_nome8").val() === '')
+                {
+                    dep_nome8 = 'no';
+                }
+
+                if ($("#dep_tel8").val() === '')
+                {
+                    dep_tel8 = 'no';
+                }
+
+                if ($("#dep_cpf8").val() === '')
+                {
+                    dep_cpf8 = 'no';
+                }
+
+                if ($("#dep_nome_mae8").val() === '')
+                {
+                    dep_nome_mae8 = 'no';
+                }
+
+                if ($("#dep_email8").val() === '')
+                {
+                    dep_email8 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco8").val() === '')
+                {
+                    dep_grau_parentesco8 = 0;
+                }
+
+                if ($("#dep_sexo8").val() === '')
+                {
+                    dep_sexo8 = 0;
+                }
+
+                if ($("#dep_nome9").val() === '')
+                {
+                    dep_nome9 = 'no';
+                }
+
+                if ($("#dep_tel9").val() === '')
+                {
+                    dep_tel9 = 'no';
+                }
+
+                if ($("#dep_cpf9").val() === '')
+                {
+                    dep_cpf9 = 'no';
+                }
+
+                if ($("#dep_nome_mae9").val() === '')
+                {
+                    dep_nome_mae9 = 'no';
+                }
+
+                if ($("#dep_email9").val() === '')
+                {
+                    dep_email9 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco9").val() === '')
+                {
+                    dep_grau_parentesco9 = 0;
+                }
+
+                if ($("#dep_sexo9").val() === '')
+                {
+                    dep_sexo9 = 0;
+                }
+
+                if ($("#dep_nome10").val() === '')
+                {
+                    dep_nome10 = 'no';
+                }
+
+                if ($("#dep_tel10").val() === '')
+                {
+                    dep_tel10 = 'no';
+                }
+
+                if ($("#dep_cpf10").val() === '')
+                {
+                    dep_cpf10 = 'no';
+                }
+
+                if ($("#dep_nome_mae10").val() === '')
+                {
+                    dep_nome_mae10 = 'no';
+                }
+
+                if ($("#dep_email10").val() === '')
+                {
+                    dep_email10 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco10").val() === '')
+                {
+                    dep_grau_parentesco10 = 0;
+                }
+
+                if ($("#dep_sexo10").val() === '')
+                {
+                    dep_sexo10 = 0;
+                }
+
+                if ($("#dep_nome11").val() === '')
+                {
+                    dep_nome11 = 'no';
+                }
+
+                if ($("#dep_tel11").val() === '')
+                {
+                    dep_tel11 = 'no';
+                }
+
+                if ($("#dep_cpf11").val() === '')
+                {
+                    dep_cpf11 = 'no';
+                }
+
+                if ($("#dep_nome_mae11").val() === '')
+                {
+                    dep_nome_mae11 = 'no';
+                }
+
+                if ($("#dep_email11").val() === '')
+                {
+                    dep_email11 = 'no';
+                }
+
+                if ($("#dep_grau_parentesco11").val() === '')
+                {
+                    dep_grau_parentesco11 = 0;
+                }
+
+                if ($("#dep_sexo11").val() === '')
+                {
+                    dep_sexo11 = 0;
+                }
+
+                $.ajax({
+                    type: "GET",
+                    dataType: "HTML",
+                    url: "../Controller/adesao.php",
+                    data: "cpf=" + cpf + "&nome=" + nome + "&mail=" + mail + "&mae=" + mae + "&hash_de_vinculo=" + hash_de_vinculo +
+                            "&tel1=" + tel1 + "&ipmalacabado=" + ipmalacabado + "&hora_entrada_dos_dados=" + hora_entrada_dos_dados +
+                            "&nascimento=" + nascimento + "&tel2=" + tel2 + "&sexo=" + sexo + "&cep=" + cep + "&rua=" + rua + "&bairro=" + bairro +
+                            "&numero=" + numero + "&complemento=" + complemento + "&cidade=" + cidade + "&uf=" + uf + "&termos_uso=" + termos_uso +
+                            "&dep_nome=" + dep_nome + "&dep_tel=" + dep_tel + "&dep_cpf=" + dep_cpf + "&dep_nome_mae=" + dep_nome_mae +
+                            "&dep_email=" + dep_email + "&dep_grau_parentesco=" + dep_grau_parentesco + "&dep_sexo=" + dep_sexo +
+                            "&dep_nome1=" + dep_nome1 + "&dep_tel1=" + dep_tel1 + "&dep_cpf1=" + dep_cpf1 + "&dep_nome_mae1=" + dep_nome_mae1 +
+                            "&dep_email1=" + dep_email1 + "&dep_grau_parentesco1=" + dep_grau_parentesco1 + "&dep_sexo1=" + dep_sexo1 +
+                            "&dep_nome2=" + dep_nome2 + "&dep_tel2=" + dep_tel2 + "&dep_cpf2=" + dep_cpf2 + "&dep_nome_mae2=" + dep_nome_mae2 +
+                            "&dep_email2=" + dep_email2 + "&dep_grau_parentesco2=" + dep_grau_parentesco2 + "&dep_sexo2=" + dep_sexo2 +
+                            "&dep_nome3=" + dep_nome3 + "&dep_tel3=" + dep_tel3 + "&dep_cpf3=" + dep_cpf3 + "&dep_nome_mae3=" + dep_nome_mae3 +
+                            "&dep_email3=" + dep_email3 + "&dep_grau_parentesco3=" + dep_grau_parentesco3 + "&dep_sexo3=" + dep_sexo3 +
+                            "&dep_nome4=" + dep_nome4 + "&dep_tel4=" + dep_tel4 + "&dep_cpf4=" + dep_cpf4 + "&dep_nome_mae4=" + dep_nome_mae4 +
+                            "&dep_email4=" + dep_email4 + "&dep_grau_parentesco4=" + dep_grau_parentesco4 + "&dep_sexo4=" + dep_sexo4 +
+                            "&dep_nome5=" + dep_nome5 + "&dep_tel5=" + dep_tel5 + "&dep_cpf5=" + dep_cpf5 + "&dep_nome_mae5=" + dep_nome_mae5 +
+                            "&dep_email5=" + dep_email5 + "&dep_grau_parentesco5=" + dep_grau_parentesco5 + "&dep_sexo5=" + dep_sexo5 +
+                            "&dep_nome6=" + dep_nome6 + "&dep_tel6=" + dep_tel6 + "&dep_cpf6=" + dep_cpf6 + "&dep_nome_mae6=" + dep_nome_mae6 +
+                            "&dep_email6=" + dep_email6 + "&dep_grau_parentesco6=" + dep_grau_parentesco6 + "&dep_sexo6=" + dep_sexo6 +
+                            "&dep_nome7=" + dep_nome7 + "&dep_tel7=" + dep_tel7 + "&dep_cpf7=" + dep_cpf7 + "&dep_nome_mae7=" + dep_nome_mae7 +
+                            "&dep_email7=" + dep_email7 + "&dep_grau_parentesco7=" + dep_grau_parentesco7 + "&dep_sexo7=" + dep_sexo7 +
+                            "&dep_nome8=" + dep_nome8 + "&dep_tel8=" + dep_tel8 + "&dep_cpf8=" + dep_cpf8 + "&dep_nome_mae8=" + dep_nome_mae8 +
+                            "&dep_email8=" + dep_email8 + "&dep_grau_parentesco8=" + dep_grau_parentesco8 + "&dep_sexo8=" + dep_sexo8 +
+                            "&dep_nome9=" + dep_nome9 + "&dep_tel9=" + dep_tel9 + "&dep_cpf9=" + dep_cpf9 + "&dep_nome_mae9=" + dep_nome_mae9 +
+                            "&dep_email9=" + dep_email9 + "&dep_grau_parentesco9=" + dep_grau_parentesco9 + "&dep_sexo9=" + dep_sexo9 + "&dep_nome10=" + dep_nome10 +
+                            "&dep_tel10=" + dep_tel10 + "&dep_cpf10=" + dep_cpf10 + "&dep_nome_mae10=" + dep_nome_mae10 + "&dep_email10=" + dep_email10 +
+                            "&dep_grau_parentesco10=" + dep_grau_parentesco10 + "&dep_sexo10=" + dep_sexo10 + "&dep_nome11=" + dep_nome11 +
+                            "&dep_tel11=" + dep_tel11 + "&dep_cpf11=" + dep_cpf11 + "&dep_nome_mae11=" + dep_nome_mae11 + "&dep_email11=" + dep_email11 +
+                            "&dep_grau_parentesco11=" + dep_grau_parentesco11 + "&dep_sexo11=" + dep_sexo11,
+                    beforeSend: function () {
+                        $("#conteudo").html("<img src='../bootstrap/loading/load.gif' class='img-rounded img-responsive'>");
+                    },
+                    success: function (response) {
+                        $("#conteudo").html(response), 
+                                $("#form")[0].reset();
+                    },
+                    error: function () {
+                        alert("Ocorreu um erro durante a requisição");
+                    }
+                });
+            }
         });
     </script>
 </html>

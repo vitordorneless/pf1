@@ -2,12 +2,12 @@
 
 class Adesao_CRUD extends Adesao {
 
-    public function save($hash_de_vinvulo, $ip_captura, $titular, $cpf_titular, $cpf_dependente, $nome, $email, $nome_mae, $telefone, $nascimento, $celular, $sexo, $cep, $rua, $bairro, $numero, $complemento, $cidade, $uf, $aceite_termos_de_uso, $hora_entrada_dos_dados, $criado_em, $localizacao) {
+    public function save($hash_de_vinvulo, $ip_captura, $titular, $cpf_titular, $cpf_dependente, $nome, $email, $nome_mae, $telefone, $nascimento, $celular, $sexo, $cep, $rua, $bairro, $numero, $complemento, $cidade, $uf, $aceite_termos_de_uso, $hora_entrada_dos_dados, $criado_em, $localizacao,$grau_parentesco) {
         include_once '../config/database_mysql.php';
         $status = 1;
         $data_ultima_alteracao = date('Y-m-d H:i:s');
         $pdo = Database::connect();
-        $smtp = $pdo->prepare("INSERT INTO adesao(hash_de_vinvulo,ip_captura,titular,cpf_titular,cpf_dependente,nome,email,nome_mae,telefone,nascimento,celular,sexo,cep,rua,bairro,numero,complemento,cidade,uf,aceite_termos_de_uso,hora_entrada_dos_dados,criado_em,localizacao,status,data_ultima_alteracao) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        $smtp = $pdo->prepare("INSERT INTO adesao(hash_de_vinvulo,ip_captura,titular,cpf_titular,cpf_dependente,nome,email,nome_mae,telefone,nascimento,celular,sexo,cep,rua,bairro,numero,complemento,cidade,uf,aceite_termos_de_uso,hora_entrada_dos_dados,criado_em,localizacao,grau_parentesco,status,data_ultima_alteracao) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
         $smtp->bindParam(1, $hash_de_vinvulo, PDO::PARAM_STR);
         $smtp->bindParam(2, $ip_captura, PDO::PARAM_STR);
         $smtp->bindParam(3, $titular, PDO::PARAM_INT);
@@ -31,9 +31,11 @@ class Adesao_CRUD extends Adesao {
         $smtp->bindParam(21, $hora_entrada_dos_dados, PDO::PARAM_STR);
         $smtp->bindParam(22, $criado_em, PDO::PARAM_STR);
         $smtp->bindParam(23, $localizacao, PDO::PARAM_STR);
-        $smtp->bindParam(24, $status, PDO::PARAM_INT);
-        $smtp->bindParam(25, $data_ultima_alteracao, PDO::PARAM_STR);
+        $smtp->bindParam(24, $grau_parentesco, PDO::PARAM_INT);
+        $smtp->bindParam(25, $status, PDO::PARAM_INT);
+        $smtp->bindParam(26, $data_ultima_alteracao, PDO::PARAM_STR);
         $confirm = $smtp->execute();
+        //print_r($pdo->errorInfo());
         Database::disconnect();
         $save = $confirm == TRUE ? TRUE : FALSE;
         return $save;

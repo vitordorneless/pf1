@@ -42,7 +42,7 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                         <h3 class="wizard-title">
                                             Elegível
                                         </h3>
-                                        <h5>Informe seus dados!</h5>
+                                        <div id="conteudo"><h5>Informe seus dados!</h5></div>
                                     </div>
                                     <div class="wizard-navigation">
                                         <ul>
@@ -88,17 +88,17 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="tel1" id="tel1" class="form-control">
+                                                        <input type="text" maxlength="16" name="tel1" id="tel1" class="form-control">
                                                     </div>         
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nascimento (DD/MM/AAAA)</label>
-                                                        <input type="text" name="nascimento" id="nascimento" class="form-control">
+                                                        <input type="text" name="nascimento" maxlength="10" id="nascimento" class="form-control">
                                                     </div>                                                             
                                                 </div>
                                                 <div class="col-sm-6">                                                    
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Celular</label>
-                                                        <input type="text" name="tel2" id="tel2" class="form-control">
+                                                        <input type="text" name="tel2" id="tel2" maxlength="16" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Sexo</label>
@@ -168,13 +168,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel" id="dep_tel" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel" id="dep_tel" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf" id="dep_cpf" class="form-control">
+                                                        <input type="text" name="dep_cpf" id="dep_cpf" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -220,13 +220,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel1" id="dep_tel1" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel1" id="dep_tel1" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf1" id="dep_cpf1" class="form-control">
+                                                        <input type="text" name="dep_cpf1" id="dep_cpf1" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -272,13 +272,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel2" id="dep_tel2" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel2" id="dep_tel2" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf2" id="dep_cpf2" class="form-control">
+                                                        <input type="text" name="dep_cpf2" id="dep_cpf2" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -324,13 +324,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel3" id="dep_tel3" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel3" id="dep_tel3" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf3" id="dep_cpf3" class="form-control">
+                                                        <input type="text" name="dep_cpf3" id="dep_cpf3" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -376,13 +376,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel4" id="dep_tel4" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel4" id="dep_tel4" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf4" id="dep_cpf4" class="form-control">
+                                                        <input type="text" name="dep_cpf4" id="dep_cpf4" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -428,13 +428,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel5" id="dep_tel5" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel5" id="dep_tel5" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf5" id="dep_cpf5" class="form-control">
+                                                        <input type="text" name="dep_cpf5" id="dep_cpf5" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -480,13 +480,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel6" id="dep_tel6" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel6" id="dep_tel6" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf6" id="dep_cpf6" class="form-control">
+                                                        <input type="text" name="dep_cpf6" id="dep_cpf6" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -532,13 +532,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel7" id="dep_tel7" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel7" id="dep_tel7" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf7" id="dep_cpf7" class="form-control">
+                                                        <input type="text" name="dep_cpf7" id="dep_cpf7" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -584,13 +584,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel8" id="dep_tel8" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel8" id="dep_tel8" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf8" id="dep_cpf8" class="form-control">
+                                                        <input type="text" name="dep_cpf8" id="dep_cpf8" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -636,13 +636,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel9" id="dep_tel9" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel9" id="dep_tel9" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf9" id="dep_cpf9" class="form-control">
+                                                        <input type="text" name="dep_cpf9" id="dep_cpf9" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -688,13 +688,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel10" id="dep_tel10" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel10" id="dep_tel10" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf10" id="dep_cpf10" class="form-control">
+                                                        <input type="text" name="dep_cpf10" id="dep_cpf10" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -740,13 +740,13 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" name="dep_tel11" id="dep_tel11" class="form-control">
+                                                        <input type="text" maxlenght="16" name="dep_tel11" id="dep_tel11" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">CPF</label>
-                                                        <input type="text" name="dep_cpf11" id="dep_cpf11" class="form-control">
+                                                        <input type="text" name="dep_cpf11" id="dep_cpf11" maxlength="11" class="form-control">
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Nome da Mãe</label>
@@ -807,7 +807,7 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                         <div class="pull-left">
                                             <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Anterior' />
                                             <div class="footer-checkbox">
-                                                <div class="col-sm-12" id="conteudo"></div>
+                                                <div class="col-sm-12"></div>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
@@ -830,9 +830,11 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
     <script src="../bootstrap/material-bootstrap-wizard-v1.0.2/assets/js/jquery.bootstrap.js" type="text/javascript"></script>    
     <script src="../bootstrap/material-bootstrap-wizard-v1.0.2/assets/js/material-bootstrap-wizard.js"></script>    
     <script src="../bootstrap/material-bootstrap-wizard-v1.0.2/assets/js/jquery.validate.min.js"></script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
     <script>
         $(document).ready(function () {
             alert('oi');
+            var geol = geoplugin_city()+'_'+geoplugin_region()+"_"+geoplugin_countryName()+"_"+geoplugin_latitude()+"_"+geoplugin_longitude();
             $("#dep_1").hide();
             $("#dep1").click(MostrarMensagem1);
             $("#dep_2").hide();
@@ -951,8 +953,8 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                 var numero = $("#numero").val();
                 var complemento = $("#complemento").val();
                 var cidade = $("#cidade").val();
-                var uf = $("#uf").val();
-                var termos_uso = $("#termos_uso").val();
+                var uf = $("#uf").val();                
+                var termos_uso = $("#termos_uso").is(":checked") === true ? 1 : 0;
                 var dep_nome = $("#dep_nome").val();
                 var dep_tel = $("#dep_tel").val();
                 var dep_cpf = $("#dep_cpf").val();
@@ -1036,7 +1038,7 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                 var dep_nome_mae11 = $("#dep_nome_mae11").val();
                 var dep_email11 = $("#dep_email11").val();
                 var dep_grau_parentesco11 = $("#dep_grau_parentesco11").val();
-                var dep_sexo11 = $("#dep_sexo11").val();
+                var dep_sexo11 = $("#dep_sexo11").val();                
                 var aviso = '';
                 var count = 0;
 
@@ -1133,6 +1135,7 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                 if (count !== 0)
                 {
                     alert(count + ' campos necessitam sua atenção: ' + aviso);
+                    count = 0;
                     return false;
                 }
 
@@ -1587,13 +1590,14 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                             "&dep_tel10=" + dep_tel10 + "&dep_cpf10=" + dep_cpf10 + "&dep_nome_mae10=" + dep_nome_mae10 + "&dep_email10=" + dep_email10 +
                             "&dep_grau_parentesco10=" + dep_grau_parentesco10 + "&dep_sexo10=" + dep_sexo10 + "&dep_nome11=" + dep_nome11 +
                             "&dep_tel11=" + dep_tel11 + "&dep_cpf11=" + dep_cpf11 + "&dep_nome_mae11=" + dep_nome_mae11 + "&dep_email11=" + dep_email11 +
-                            "&dep_grau_parentesco11=" + dep_grau_parentesco11 + "&dep_sexo11=" + dep_sexo11,
+                            "&dep_grau_parentesco11=" + dep_grau_parentesco11 + "&dep_sexo11=" + dep_sexo11 + "&geol=" + geol,
                     beforeSend: function () {
                         $("#conteudo").html("<img src='../bootstrap/loading/load.gif' class='img-rounded img-responsive'>");
                     },
                     success: function (response) {
-                        $("#conteudo").html(response), 
-                                $("#form")[0].reset();
+                        $("#conteudo").empty(),
+                        $("#conteudo").html(response)/*, 
+                                $("#form")[0].reset()*/;
                     },
                     error: function () {
                         alert("Ocorreu um erro durante a requisição");

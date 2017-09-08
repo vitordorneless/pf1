@@ -27,6 +27,7 @@ class Adesao {
     private $status;
     private $data_ultima_alteracao;
     private $titular;
+    private $titular_dep;
     private $cpf_dependente;
 
     public function set_id($id) {
@@ -35,6 +36,14 @@ class Adesao {
 
     public function get_id() {
         return $this->id;
+    }
+    
+    public function set_titular_dep($titular_dep) {
+        $this->titular_dep = $titular_dep;
+    }
+
+    public function get_titular_dep() {
+        return $this->titular_dep;
     }
 
     public function set_cpf_dependente($cpf_dependente) {

@@ -40,4 +40,15 @@ ADD COLUMN `titular` INT NOT NULL AFTER `ip_captura`,
 ADD COLUMN `cpf_dependente` VARCHAR(12) NOT NULL AFTER `cpf_titular`;
 ALTER TABLE `pf1`.`adesao` 
 ADD COLUMN `grau_parentesco` INT NOT NULL AFTER `localizacao`;
-select * from adesao;
+select * from usuarios;
+select cpf_titular, telefone,celular,cidade from adesao where titular in (1) order by cpf_titular asc;
+SELECT count(1) as existe FROM usuarios where status in (1) and login = 'vitor' and senha = 07917207;
+CREATE TABLE `pf1`.`usuarios` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `login` VARCHAR(45) NOT NULL,
+  `senha` VARCHAR(64) NOT NULL,
+  `status` INT NOT NULL,
+  `data_ultima_alteracao` DATETIME NOT NULL,
+  PRIMARY KEY (`id`));
+  
+  select * from adesao;

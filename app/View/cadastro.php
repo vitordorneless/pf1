@@ -20,7 +20,7 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
         <link href="../bootstrap/material-bootstrap-wizard-v1.0.2/assets/css/demo.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="image-container set-full-height" style="background-image: url('../bootstrap/material-bootstrap-wizard-v1.0.2/assets/img/wizard-book.jpg')">            
+        <div class="image-container set-full-height" style="background-image: url('../bootstrap/material-bootstrap-wizard-v1.0.2/assets/img/wizard-book.jpg')">
             <a href="#">
                 <div class="logo-container">
                     <div class="logo">
@@ -832,8 +832,7 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
     <script src="../bootstrap/material-bootstrap-wizard-v1.0.2/assets/js/jquery.validate.min.js"></script>
     <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
     <script>
-        $(document).ready(function () {
-            alert('oi');
+        $(document).ready(function () {           
             var geol = geoplugin_city()+'_'+geoplugin_region()+"_"+geoplugin_countryName()+"_"+geoplugin_latitude()+"_"+geoplugin_longitude();
             $("#dep_1").hide();
             $("#dep1").click(MostrarMensagem1);

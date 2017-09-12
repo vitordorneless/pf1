@@ -168,7 +168,7 @@ $ip_do_malacabado = $_SERVER['REMOTE_ADDR'];
                                                     </div>
                                                     <div class="form-group label-floating">
                                                         <label class="control-label">Telefone</label>
-                                                        <input type="text" maxlenght="16" name="dep_tel" id="dep_tel" class="form-control">
+                                                        <input type="text" name="dep_tel" id="dep_tel" maxlenght="16" class="form-control">
                                                     </div>                                                    
                                                 </div>
                                                 <div class="col-sm-6">

@@ -64,8 +64,7 @@ session_start();
                                 </a>
                                 <!-- Sub menu -->
                                 <ul>
-                                    <li><a tabindex="-1" href="#" id="titulares">Titulares</a></li>
-                                    <li><a tabindex="-1" href="#" id="analitico">Analitíco</a></li>
+                                    <li><a tabindex="-1" href="#" id="titulares">Titulares</a></li>                                    
                                     <li><a tabindex="-1" href="#" id="geral">Geral</a></li>
                                 </ul>
                             </li>

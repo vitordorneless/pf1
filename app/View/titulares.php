@@ -16,7 +16,7 @@ session_start();
         <div class="col-md-10">
             <div class="widget">
                 <div class="widget-header">
-                    <h2><strong>Listar </strong>Adesões</h2>                    
+                    <h2><strong>Listar </strong>Adesões - Titulares</h2>                    
                 </div>
                 <div class="widget-content">                    
                     <br>
@@ -54,7 +54,7 @@ session_start();
                                     }
 
                                     $querie = new Queries();
-                                    foreach ($pdo->query($querie->geral_listar()) as $value) {
+                                    foreach ($pdo->query($querie->titulares_listar()) as $value) {
                                         echo '<tr>';
                                         echo '<td>' . $value['cpf_titular'] . '</td>';
                                         echo '<td>' . $value['telefone'] . '</td>';
@@ -70,7 +70,7 @@ session_start();
                         </form>
                     </div>                    
                     <div class="modal large" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
+                        <div class="modal-dialog">
                             <div class="modal-content"></div>
                         </div>
                     </div>                    
